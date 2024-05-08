@@ -483,7 +483,7 @@
 				)
 			)
 			(property "Footprint" "solar:Solar"
-				(at -1.27 2.54 0)
+				(at -0.254 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -501,7 +501,7 @@
 				)
 			)
 			(property "Description" "Solar Cell"
-				(at 0 -8.89 0)
+				(at 0.254 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -512,7 +512,7 @@
 			(symbol "solar_cell_0_1"
 				(rectangle
 					(start -6.35 7.62)
-					(end 6.35 -7.62)
+					(end 6.35 2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -523,53 +523,17 @@
 				)
 			)
 			(symbol "solar_cell_1_1"
-				(pin output line
-					(at 8.89 5.08 180)
-					(length 2.54)
-					(name "neg1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 -5.08 180)
-					(length 2.54)
-					(name "neg2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
+				(pin passive line
 					(at -8.89 5.08 0)
 					(length 2.54)
-					(name "pos1"
+					(name "pos"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -577,17 +541,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -8.89 -5.08 0)
+				(pin passive line
+					(at 8.89 5.08 180)
 					(length 2.54)
-					(name "pos2"
+					(name "neg"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number ""
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -597,18 +561,6 @@
 				)
 			)
 		)
-	)
-	(junction
-		(at 101.6 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05c28b68-198e-4dbb-94f8-87ca9f64cf79")
-	)
-	(junction
-		(at 78.74 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d63111f1-f273-42d7-9d03-47be6d99e651")
 	)
 	(wire
 		(pts
@@ -622,16 +574,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 63.5) (xy 81.28 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11726b1e-b9d8-4032-9193-93bc4cd29031")
-	)
-	(wire
-		(pts
 			(xy 133.35 63.5) (xy 133.35 66.04)
 		)
 		(stroke
@@ -639,16 +581,6 @@
 			(type default)
 		)
 		(uuid "19856a26-2463-436a-8abf-cbc831ace872")
-	)
-	(wire
-		(pts
-			(xy 78.74 53.34) (xy 78.74 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c71e044-b5ca-419f-9bb5-2e3d7e37186e")
 	)
 	(wire
 		(pts
@@ -672,26 +604,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 53.34) (xy 101.6 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57cc17ea-4bda-4566-bb50-953abe2240c6")
-	)
-	(wire
-		(pts
-			(xy 101.6 63.5) (xy 101.6 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6829a6fb-4f85-4dd8-a473-b9b16787ecc4")
-	)
-	(wire
-		(pts
 			(xy 109.22 45.72) (xy 109.22 48.26)
 		)
 		(stroke
@@ -702,23 +614,13 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 53.34) (xy 101.6 63.5)
+			(xy 101.6 59.69) (xy 101.6 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "774cf3cc-3a9e-4c1b-8060-d645baf9f273")
-	)
-	(wire
-		(pts
-			(xy 99.06 63.5) (xy 101.6 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82ff73ec-fb72-4370-9d00-ad3f0eda05a4")
+		(uuid "89ae95b2-8ff8-4706-925a-71e2599b7494")
 	)
 	(wire
 		(pts
@@ -752,7 +654,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 53.34) (xy 81.28 53.34)
+			(xy 78.74 59.69) (xy 81.28 59.69)
 		)
 		(stroke
 			(width 0)
@@ -762,7 +664,17 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 50.8) (xy 78.74 53.34)
+			(xy 99.06 59.69) (xy 101.6 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8bc96c1-aa64-4f58-8edd-ede215217671")
+	)
+	(wire
+		(pts
+			(xy 78.74 53.34) (xy 78.74 59.69)
 		)
 		(stroke
 			(width 0)
@@ -972,7 +884,7 @@
 	)
 	(symbol
 		(lib_id "solar:solar_cell")
-		(at 90.17 58.42 0)
+		(at 90.17 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -981,7 +893,7 @@
 		(fields_autoplaced yes)
 		(uuid "26c947e2-ebba-4bf2-be89-5292cceeab33")
 		(property "Reference" "U1"
-			(at 90.17 49.53 0)
+			(at 90.17 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -989,7 +901,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 90.17 52.07 0)
+			(at 90.17 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -997,7 +909,7 @@
 			)
 		)
 		(property "Footprint" "solar:Solar"
-			(at 88.9 58.42 0)
+			(at 88.9 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1006,7 +918,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 58.42 0)
+			(at 88.9 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1015,7 +927,7 @@
 			)
 		)
 		(property "Description" "Solar Cell"
-			(at 90.17 59.69 0)
+			(at 90.17 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1023,17 +935,11 @@
 				(hide yes)
 			)
 		)
-		(pin ""
+		(pin "1"
 			(uuid "165418ab-dcc7-4c02-a8d6-91247ba6351b")
 		)
-		(pin ""
+		(pin "2"
 			(uuid "d483a2c1-896d-4b78-91aa-408aa42a1db7")
-		)
-		(pin ""
-			(uuid "6d61c022-01de-447c-b5c5-f2fa70fda4ec")
-		)
-		(pin ""
-			(uuid "12227ecc-c0b2-4a98-8a44-2095efdf5cf8")
 		)
 		(instances
 			(project "elen433_honors_solar_cell_project"
@@ -1046,7 +952,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 78.74 50.8 0)
+		(at 78.74 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1055,7 +961,7 @@
 		(fields_autoplaced yes)
 		(uuid "2ffac7c5-2b54-491c-9f79-a07ddeb7f254")
 		(property "Reference" "#PWR01"
-			(at 78.74 54.61 0)
+			(at 78.74 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1064,7 +970,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 78.74 45.72 0)
+			(at 78.74 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +978,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 50.8 0)
+			(at 78.74 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1081,7 +987,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 50.8 0)
+			(at 78.74 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1090,7 +996,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 78.74 50.8 0)
+			(at 78.74 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
