@@ -1,0 +1,4 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"H1, H2, H3, H4",MountingHole_2.2mm_M2_Pad,4,MountingHole_Pad,
+J1,PinHeader_1x02_P2.54mm_Vertical,1,Conn_01x02,
+U1,Solar,1,~,
